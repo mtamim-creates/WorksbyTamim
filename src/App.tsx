@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import OverviewBar from './components/OverviewBar';
@@ -120,6 +121,7 @@ export default function App() {
           </main>
         </div>
       </div>
+      <Analytics />
     </div>
   );
 }
